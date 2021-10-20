@@ -1,0 +1,29 @@
+.wrapper{
+background: rgb(164, 231, 228);
+}
+
+h1{
+text-align: center;
+background: rgb(164, 165, 231);
+}
+
+ul{
+text-align: center;
+}
+
+li{
+    display: inline-block;
+}
+
+.game{
+    width: 350px;
+    background: wheat;
+}
+
+.block{
+    display: inline-block;
+    background: rgb(164, 165, 231);
+    width:100px;
+    height: 100px;
+    border: 1px solid rgb(255, 255, 255);
+}
