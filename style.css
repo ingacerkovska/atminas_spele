@@ -44,13 +44,15 @@ li{
     color: black;
   }
   #navigacijai{
-    display: inline-block;
+    float: right;
+    display: block;
     width:100px;
     height: 40px;
   }
   .footer{
-    display: inline-block;
-    width:300px;
+    float: left;
+    display: block;
+    width:200px;
     font-size: 20px;
     font-family: 'Dancing Script', cursive;
   }
