@@ -27,3 +27,20 @@ li{
     height: 100px;
     border: 1px solid rgb(255, 255, 255);
 }
+.navigacija{
+    
+    overflow: hidden;
+}
+.navigacija a{
+    float: left;
+    color: #deeaee;
+    text-decoration: none;
+    display: block; 
+    text-align: center;
+    padding: 10px 12px;
+    background-color: #644d60;
+  }
+  .navigacija a:hover{
+    background-color:rgb(164, 231, 228);
+    color: black;
+  }
