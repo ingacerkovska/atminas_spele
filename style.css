@@ -17,7 +17,6 @@ li{
 
 .game{
     width: 350px;
-    background: wheat;
 }
 
 .block{
@@ -43,4 +42,17 @@ li{
   .navigacija a:hover{
     background-color:rgb(164, 231, 228);
     color: black;
+  }
+  #navigacijai{
+    float:right;
+    display: inline-block;
+    width:100px;
+    height: 40px;
+  }
+  .footer{
+    float:left;
+    display: inline-block;
+    width:300px;
+    font-size: 20px;
+    font-family: 'Rampart One', cursive;
   }
