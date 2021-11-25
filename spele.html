@@ -76,7 +76,18 @@
          document.querySelector('#'+laukums+' div').style.display="block"
          pedejieDivi.push(laukums)
         }
-        
+        if (pedejieDivi.length==2) {
+            let atverts1=pedejieDivi[0].replace('L','')
+            let atverts2=pedejieDivi[1].replace('L','')
+           atverts1=parseInt(atverts1,10)
+           atverts2=parseInt(atverts2,10)
+            if (laukumuSaturs[atverts1]==laukumuSaturs[atverts2])
+            {
+              console.log('atverti vienadi')  
+              
+            }
+            atvertieLaukumi.push(laukums) 
+        }
         
         atvertieLaukumi.push(laukums)
         if (laukumuSaturs.length==atvertieLaukumi.length){
