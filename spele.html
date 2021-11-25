@@ -66,13 +66,18 @@
     function veiktGajienu(laukums){
         let atvertsJaunsLaukums=false;
         if (atvertieLaukumi.indexOf(laukums)==-1){
-            atvertsJaunsLaukums=false
-        }
-        else{
             atvertsJaunsLaukums=true
         }
-        console.log(atvertsJaunsLaukums)
-        document.querySelector('#'+laukums+' div').style.display="block"
+        else{
+            atvertsJaunsLaukums=false
+        }
+        if (atvertsJaunsLaukums=true)
+        {
+         document.querySelector('#'+laukums+' div').style.display="block"
+         pedejieDivi.push(laukums)
+        }
+        
+        
         atvertieLaukumi.push(laukums)
         if (laukumuSaturs.length==atvertieLaukumi.length){
             alert('Apsveicam!!!')
