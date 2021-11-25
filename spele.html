@@ -84,9 +84,14 @@
             if (laukumuSaturs[atverts1]==laukumuSaturs[atverts2])
             {
               console.log('atverti vienadi')  
-              
+              atvertieLaukumi.push(pedejieDivi[0],pedejieDivi[1]) 
             }
-            atvertieLaukumi.push(laukums) 
+            else{
+                console.log('atverti dažādi') 
+                document.querySelector('#'+pedejieDivi[0]+'div').style.display='none'
+                document.querySelector('#'+pedejieDivi[1]+'div').style.display='none'
+            }
+            pedejieDivi=[]
         }
         
         atvertieLaukumi.push(laukums)
