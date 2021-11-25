@@ -35,7 +35,7 @@
         <h3 class="virsraksts">Noteikumu teksts</h3>
         Vārds: <input id='vards'/>
         <br/>
-        Vecums: <input id='vecims'/>
+        Vecums: <input id='vecums'/>
         <br/>
         Reģions: 
         <select id="regions">
@@ -44,6 +44,8 @@
             <option value="latgale">Latgale</option>
             <option value="zemgale">Zemgale</option>
         </select>
+        <br/>
+        <button onclick="saktSpeli()">Sākt</button>
 
     </div>
    
@@ -52,6 +54,21 @@
 </div> <!--beidzas wrapper-->
 
 <script>
+    function saktSpeli() 
+    {
+        let vards = document.querySelector('#vards').value 
+        let vecums = document.querySelector('#vecums').value 
+        let regions = document.querySelector('#regions').value 
+        console.log(vards)
+
+        if (vards=='') //dažreiz der undefind, bet ne šoreiz
+        {
+            alert('Ievadi vārdu!')
+        }
+    }//beidzas saktspeli()
+    
+
+
    /*let vards;
    const valsts="Latvija";
     vards="Inga";
